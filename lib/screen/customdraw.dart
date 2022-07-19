@@ -35,7 +35,7 @@ class MyPaint extends CustomPainter {
     Paint d1 = Paint()
       ..color = Colors.black
       ..strokeWidth = 10
-      ..strokeCap = StrokeCap.butt;
+      ..strokeCap = StrokeCap.square;
 
     Offset start = Offset(0, size.height / 2);
     Offset end = Offset(size.width, size.height / 2);
