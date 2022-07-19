@@ -1,5 +1,6 @@
 import 'package:animation/screen/animatealign.dart';
 import 'package:animation/screen/animation_s.dart';
+import 'package:animation/screen/customdraw.dart';
 import 'package:animation/screen/detail_s.dart';
 import 'package:animation/screen/exanim.dart';
 import 'package:animation/screen/opecity.dart';
@@ -10,7 +11,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'exanim',
+      initialRoute: 'draw',
       routes: {
         '/':(context)=>AnimationScreen(),
         'detail':(context)=>Detaile_s(),
@@ -18,6 +19,7 @@ void main() {
         'opecity':(context)=>Opecity_S(),
         'pos':(context)=>Position_S(),
         'exanim':(context)=>ExAnimation(),
+        'draw':(context)=>Custom_Screen(),
       },
     ),
   );
