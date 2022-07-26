@@ -26,7 +26,7 @@ class _Custom_PaintState extends State<Custom_Paint> {
                 ..color = Colors.purple;
 
               DrawModel d1= DrawModel(paint: p1,point: point);
-
+//
               list.add(d1);
             });
           },
