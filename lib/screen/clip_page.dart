@@ -15,25 +15,43 @@ class _Clip_pageState extends State<Clip_page> {
         body: Center(
           child: Container(
             alignment: Alignment.center,
-            color: Colors.lightBlue,
             height: 500,
             width: 300,
             child: ClipPath(
-              clipper: ClipperShape(),
+              child: Image.network("https://fancycrave.com/wp-content/uploads/2019/12/Free-Nature-Pictures-min.jpg"),
+              ),
             ),
           ),
         ),
-      ),
-    );
+      );
   }
 }
-class ClipperShape extends CustomClipper<Path>{
+/*class ClipperShape extends CustomClipper<Path>{
   @override
   getClip(Size size) {
     Paint d1 = Paint()
       ..color = Colors.black
       ..strokeWidth = 10
       ..strokeCap = StrokeCap.butt;
+
+    Path path=Path();
+    path.moveTo(0, size.height/2);
+    path.lineTo(size.width/2, 0);
+    path.lineTo(size.width, size.height/2);
+
+    return path;
+  }
+
+  @override
+  bool shouldReclip(covariant CustomClipper oldClipper) {
+    return false;
+  }
+
+}*/
+
+class ClipperShape extends CustomClipper<Path>{
+  @override
+  Path getClip(Size size) {
 
     Path path=Path();
     path.moveTo(0, size.height/2);

@@ -12,7 +12,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'clip',
+      initialRoute: 'paint',
       routes: {
         '/':(context)=>AnimationScreen(),
         'detail':(context)=>Detaile_s(),
@@ -22,6 +22,7 @@ void main() {
         'exanim':(context)=>ExAnimation(),
         'draw':(context)=>Custom_Screen(),
         'clip':(context)=>Clip_page(),
+        'paint':(context)=>CustomPaint(),
       },
     ),
   );
