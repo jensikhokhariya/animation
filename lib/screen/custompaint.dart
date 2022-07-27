@@ -60,7 +60,6 @@ class _Custom_PaintState extends State<Custom_Paint> {
     );
   }
 }
-//
 class DrawModel {
   Paint? paint;
   Offset? point;
