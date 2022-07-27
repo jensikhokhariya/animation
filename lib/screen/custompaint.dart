@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class Custom_Paint extends StatefulWidget {
@@ -26,7 +28,6 @@ class _Custom_PaintState extends State<Custom_Paint> {
                 ..color = Colors.purple;
 
               DrawModel d1= DrawModel(paint: p1,point: point);
-//
               list.add(d1);
             });
           },
@@ -47,7 +48,7 @@ class _Custom_PaintState extends State<Custom_Paint> {
           },
           onPanEnd: (details) {
             setState((){
-              list.add(DrawModel(paint: null,point: null));
+              list.add(DrawModel(point: null,paint: null));
             });
           },
           child: CustomPaint(
@@ -84,8 +85,7 @@ class Drawing extends CustomPainter {
         offsetPoints.add(pointlist[i].point!);
         offsetPoints.add(
             Offset(pointlist[i].point!.dx + 0.1, pointlist[i].point!.dy + 0.1));
-        var pointMode;
-        canvas.drawPoints(pointMode.points, offsetPoints, pointlist[i].paint!);
+        canvas.drawPoints(PointMode.points, offsetPoints, pointlist[i].paint!);
       }
     }
   }

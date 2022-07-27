@@ -2,6 +2,7 @@ import 'package:animation/screen/animatealign.dart';
 import 'package:animation/screen/animation_s.dart';
 import 'package:animation/screen/clip_page.dart';
 import 'package:animation/screen/customdraw.dart';
+import 'package:animation/screen/custompaint.dart';
 import 'package:animation/screen/detail_s.dart';
 import 'package:animation/screen/exanim.dart';
 import 'package:animation/screen/opecity.dart';
@@ -22,7 +23,7 @@ void main() {
         'exanim':(context)=>ExAnimation(),
         'draw':(context)=>Custom_Screen(),
         'clip':(context)=>Clip_page(),
-        'paint':(context)=>CustomPaint(),
+        'paint':(context)=>Custom_Paint(),
       },
     ),
   );
