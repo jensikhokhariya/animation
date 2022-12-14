@@ -13,7 +13,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'paint',
+      initialRoute: '/',
       routes: {
         '/':(context)=>AnimationScreen(),
         'detail':(context)=>Detaile_s(),

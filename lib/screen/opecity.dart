@@ -23,7 +23,7 @@ class _Opecity_SState extends State<Opecity_S> {
           child: Column(
             children: [
               Container(
-                color: Colors.white,
+                color: Colors.white10,
                 child: GestureDetector(
                   onTap: () {
                     setState((){
